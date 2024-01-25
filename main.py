@@ -36,7 +36,7 @@ import streamlit as st
 import warnings
 warnings.filterwarnings("ignore")
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "API KEY"
 
 def main():
     data1 = pd.read_csv("./data/merge_data_review.csv") # 한글책 데이터
@@ -103,10 +103,6 @@ def main():
     with open('./data/corpus.txt', 'a', encoding='utf-8') as f:
         for word in corpus2:
             f.write(word+ '\n')
-
-    # korean_stop_words = [
-    # '의', '가', '이', '은', '들', '는', '좀', '잘', '걍', '과', '도', '를', '으로', '자', '에', '와', '한', '하다'
-    # ]
 
     with open('./data/stopword.txt', 'r', encoding='utf-8') as file:
         korean_stop_words = [line.strip() for line in file]
@@ -244,7 +240,7 @@ def main():
         return summary
     
     def translate(raw_text):
-        api_key = "b14dfe91-4e6b-1864-840b-4c64eb6149e8"
+        api_key = "API Key"
         translator = deepl.Translator(api_key)
         result = translator.translate_text(raw_text, target_lang="KO")
 
