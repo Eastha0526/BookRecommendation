@@ -8,7 +8,8 @@
 
 ## 프로세스
 
-<img src ="./flowchart.png">
+![image](https://github.com/Eastha0526/BookRecommendation/assets/110336043/9f4165f4-ea5d-49a6-876c-bba5a736c2f9)
+
 
 ---
 
